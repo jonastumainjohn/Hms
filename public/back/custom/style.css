@@ -1,0 +1,300 @@
+.table td, .table th {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.icon-btn {
+    background: none;          
+    border: none;             
+    padding: 0;                
+    margin: 0;                 
+    cursor: pointer;          
+    display: inline-flex;      
+    align-items: center;       
+    justify-content: center;   
+}
+.icon-btn i {
+    font-size: 20px;           
+    transition: transform 0.2s ease;  
+}
+.icon-btn:hover i {
+    transform: scale(1.1);    
+}
+/* loader style */
+.pre-loader1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.pre-loader-box {
+    text-align: center;
+}
+
+.loader-progress1 {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #e0e0e0;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+.percent1 {
+    font-weight: bold;
+}
+
+.loading-text1 {
+    font-size: 16px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Base styles for all devices */
+.select2-container .select2-selection--single {
+    height: 38px; 
+    line-height: 36px;
+    border: 1px solid #ced4da;
+    border-radius: 4px; 
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Ensure the table fits well on smaller screens */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+/* Adjust table styles for better legibility */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Make the table look cleaner on smaller screens */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.875rem; /* Smaller text on small screens */
+    }
+
+    .table-responsive {
+        margin-bottom: 15px;
+    }
+}
+
+/* Optional: Customize table header and row hover styles */
+.table th {
+    background-color: #f1f1f1;
+    color: #495057;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Styling for action buttons */
+.btn-sm {
+    padding: 6px 10px;
+    font-size: 0.875rem;
+    border-radius: 4px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-success:hover,
+.btn-danger:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+ /* Cards Styling */
+ .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Chart Styling */
+.chart-area {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.chartjs-render-monitor {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-xl-3 {
+        margin-bottom: 20px;
+    }
+
+    .col-xl-4 {
+        margin-bottom: 20px;
+    }
+
+    .col-xl-8 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Text and Labels Styling */
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.text-gray-800 {
+    color: #5a5c69;
+}
+
+
+/* Style for Search Box */
+#search-medical {
+    border: 2px solid #28a745;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#search-medical:focus {
+    border-color: #155724;
+    box-shadow: 0 0 5px rgba(21, 87, 36, 0.5);
+}
+
+/* Style for Medical Items */
+#medicals-list .form-check {
+    transition: transform 0.2s ease-in-out;
+}
+
+#medicals-list .form-check:hover {
+    transform: translateY(-2px);
+    background-color: #f8f9fa;
+}
+
+
+.badge-custom-pending {
+    background-color: #f0ad4e; /* Light yellow */
+    color: #fff;
+}
+
+.badge-custom-performed {
+    background-color: #5cb85c; /* Dark blue */
+    color: #fff;
+}
+
+
+.site-logo {
+    height: 40px; /* Adjust as needed */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the logo fits nicely within its container */
+}
+
+/* Remove default background and border from breadcrumb */
+nav[aria-label="breadcrumb"] .breadcrumb {
+    background: transparent;  /* Removes any background color */
+    border: none;             /* Removes any border if present */
+    padding: 0;               /* Optional: Removes padding if needed */
+}
+
+/* Remove the link styles (color, underline) */
+nav[aria-label="breadcrumb"] .breadcrumb a {
+    text-decoration: none;   /* Removes underline */
+    color: inherit;          /* Inherits the color of the parent */
+}
+
+/* Optionally, style the active breadcrumb item */
+nav[aria-label="breadcrumb"] .breadcrumb .active {
+    font-weight: bold;  /* Makes the active breadcrumb item bold */
+}
+
+/* Ensure the breadcrumb items appear without unwanted styling */
+nav[aria-label="breadcrumb"] .breadcrumb-item {
+    background: transparent; /* Remove any background color */
+}
+
+.notification-message {
+    cursor: pointer;
+    padding: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.notification-message:hover {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+
+
+
